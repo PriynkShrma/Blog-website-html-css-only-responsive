@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blogxzone</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">\
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=KoHo:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bubbler+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        html {
+            font-size: 5px;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #toppic {
+            position: absolute;
+            width: 100%;
+            height: 502px;
+            filter: brightness(50%);
+            background-attachment: fixed;
+        }
+
+        #listnav {
+            display: flex;
+            background-color: rgb(37, 31, 31);
+            position: relative;
+            top: -0px;
+            align-items: flex-end;
+            justify-content: flex-end;
+
+            padding-right: 10px;
+            font-size: 3rem;
+
+        }
+
+        #select {
+            display: none;
+            font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        a :hover {
+            font-size: 4rem;
+        }
+
+        #bname {
+            display: flex;
+            font-size: 15rem;
+            position: relative;
+            color: white;
+            top: 85px;
+            font-family: 'Pathway Gothic One';
+            text-align: center;
+            justify-content: center;
+
+        }
+
+        #but {
+            color: white;
+            position: relative;
+            text-align: center;
+            justify-content: center;
+            top: 100px;
+
+
+        }
+
+        #bt {
+            font-size: 7rem;
+
+            background-color: rgba(124, 122, 122, 0);
+            color: rgb(255, 255, 255);
+            border: white 3px solid;
+            border-radius: 40px;
+            padding: 0px 36px 0px 36px;
+
+        }
+
+        #bt:hover {
+
+            box-shadow: 20px 20px 50px 10px black;
+            background-color: rgba(255, 0, 0, 0.836);
+            border: rgba(255, 0, 0, 0.836) 3px solid;
+        }
+
+        #aboutsecs img {
+            position: relative;
+            float: right;
+            clear: right;
+            margin-left: 20px;
+            top: 325px;
+
+        }
+
+        #aboutsecs p {
+            color: rgb(15, 15, 15);
+            position: relative;
+            top: 374px;
+            font-size: 4rem;
+            margin-left: 55px;
+            text-align: justify;
+            font-family: 'Quicksand';
+
+        }
+
+        h1 {
+            position: relative;
+
+            top: 352px;
+            text-align: center;
+            font-size: 8rem;
+            font-family: 'Oswald';
+
+        }
+
+        #loginsecs {
+
+            position: relative;
+            top: 425px;
+
+            height: 220px;
+            filter: brightness(55%);
+            background-image: url(lights-1088141_1280.webp);
+
+            background-attachment: fixed;
+        }
+
+        #xyz p {
+            font-size: 8rem;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            font-family: 'KoHo';
+            position: relative;
+            top: 246px;
+            color: white;
+        }
+
+        #xyz a {
+            color: rgb(255, 255, 255);
+            font-size: 5rem;
+        }
+
+        #xyz a:hover {
+            font-size: 6rem;
+        }
+
+        h2 {
+            position: relative;
+            font-size: 8rem;
+            text-align: center;
+            justify-content: center;
+            top: 296px;
+            font-family: 'Londrina Solid';
+        }
+
+        #typesecs {
+            position: relative;
+            top: 381px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+        }
+
+
+
+        #stories {
+            font-size: 6rem;
+
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 342px;
+            width: 342px;
+            transition: all ease-in-out 0.3s;
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4);
+            font-family: 'Jura';
+        }
+
+        #stories:hover {
+            background-color: #cc1616;
+            color: white;
+            padding: 0px 6px 8px 6px;
+        }
+
+
+
+
+
+        #personal {
+            font-size: 6rem;
+            transition: all ease-in-out 0.3s;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 342px;
+            width: 342px;
+            font-family: 'Jura';
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        #personal:hover {
+            background-color: #cc1616;
+            color: white;
+            padding: 0px 6px 8px 6px;
+        }
+
+
+
+        #professional {
+            font-size: 6rem;
+            transition: all ease-in-out 0.3s;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 342px;
+            width: 342px;
+            font-family: 'Jura';
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        #professional:hover {
+            background-color: #cc1616;
+            color: white;
+            padding: 0px 6px 8px 6px;
+        }
+
+        #flex {
+            display: flex;
+            position: relative;
+            top: 400px;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+        }
+
+        #educational {
+            font-size: 6rem;
+            transition: all ease-in-out 0.3s;
+            margin: 10px;
+            height: 342px;
+            width: 342px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Jura';
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        #educational:hover {
+            background-color: #cc1616;
+            color: white;
+            padding: 0px 6px 8px 6px;
+        }
+
+
+
+
+        #travel {
+            font-size: 6rem;
+            transition: all ease-in-out 0.3s;
+            margin: 10px;
+            height: 342px;
+            width: 342px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Jura';
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        #travel:hover {
+            background-color: #cc1616;
+            color: white;
+            padding: 0px 6px 8px 6px;
+        }
+
+
+
+        #lifestyle {
+            font-size: 6rem;
+            transition: all ease-in-out 0.3s;
+            margin: 10px;
+            height: 342px;
+            width: 342px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Jura';
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4);
+        }
+
+
+        #lifestyle:hover {
+            background-color: #cc1616;
+            color: white;
+            padding: 0px 6px 8px 6px;
+        }
+
+        h3 {
+            font-size: 5rem;
+            position: relative;
+            font-size: 8rem;
+            text-align: center;
+            justify-content: center;
+            top: 476px;
+            background-color: #ea1a1ac5;
+    border-radius: 116px;
+    color: white;
+    font-family: 'Oswald';
+}
+           
+        
+
+        #readsecs {
+            display: flex;
+            position: relative;
+            top: 540px;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+          
+        }
+
+       
+       
+        #meeting {
+            font-size: 5rem;
+            font-size: 6rem;
+font-family: 'Bubbler One';
+background-color: white;
+            margin: 10px;
+            display: flex;
+            text-align: justify;
+            justify-content: center;
+            align-items: center;
+            height: 221px;
+            width: 221px;
+            transition: all ease-in-out 0.3s;
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4);
+            border-radius: 235px;
+            color: #cc1616;
+        }
+        #meeting:hover {
+            background-color: #cc1616;
+            color: white;
+            padding: 0px 6px 8px 6px;
+        }
+
+        #murder {
+            font-size: 5rem;
+            font-size: 6rem;
+            border-radius: 235px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 221px;
+            width: 221px;
+            transition: all ease-in-out 0.3s;
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4);
+            background-color: white;
+            color: #cc1616;
+            font-family: 'Bubbler One';
+        }
+        #murder:hover {
+            background-color: #cc1616;
+            color: white;
+            padding: 0px 6px 8px 6px;
+        }
+        #working {
+            font-size: 5rem;
+            font-size: 6rem;
+            border-radius: 235px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:221px;
+            width: 221px;
+            transition: all ease-in-out 0.3s;
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4);
+            background-color: white;
+            color: #cc1616;
+            font-family: 'Bubbler One';
+        }
+            #working:hover {
+            background-color: #cc1616;
+            color: white;
+            padding: 0px 6px 8px 6px;
+      
+        }
+       
+#Cyberhub{
+    font-family: 'Bubbler One';
+            font-size: 6rem;
+            border-radius: 235px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:221px;
+            width: 221px;
+            transition: all ease-in-out 0.3s;
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4);
+            
+            color: #cc1616;
+}
+#Cyberhub:hover {
+            background-color: #cc1616;
+            color: white;
+            padding: 0px 6px 8px 6px;
+      
+        }
+#Heir{
+    font-size: 5rem;
+            font-size: 6rem;
+            border-radius: 235px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:221px;
+            width: 221px;
+            transition: all ease-in-out 0.3s;
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4);
+            background-color: white;
+            color: #cc1616;
+            font-family: 'Bubbler One';
+}
+#Heir:hover {
+            background-color: #cc1616;
+            color: white;
+            padding: 0px 6px 8px 6px;
+      
+        }
+        #flexx {
+            display: flex;
+            position: relative;
+            top: 540px;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+           
+        }
+        #spacetime{
+            font-size: 5rem;
+            font-size: 6rem;
+            border-radius: 235px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height:221px;
+            width: 221px;
+            transition: all ease-in-out 0.3s;
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4);
+            background-color: white;
+            color: #cc1616;
+            font-family: 'Bubbler One';
+}
+#spacetime:hover {
+            background-color: #cc1616;
+            color: white;
+            padding: 0px 6px 8px 6px;
+      
+        }
+        #trav {
+            font-size: 5rem;
+            font-size: 6rem;
+            border-radius: 235px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 221px;
+            width: 221px;
+            transition: all ease-in-out 0.3s;
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4);
+            background-color: white;
+            color: #cc1616;
+            font-family: 'Bubbler One';
+        }  #trav:hover {
+            background-color: #cc1616;
+            color: white;
+            padding: 0px 6px 8px 6px;
+        }
+
+        #life {
+            font-size: 5rem;
+            font-size: 6rem;
+            border-radius: 235px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 221px;
+            width: 221px;
+            transition: all ease-in-out 0.3s;
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4);
+            background-color: white;
+            color: #cc1616;
+            font-family: 'Bubbler One';
+        }
+        #life:hover {
+            background-color: #cc1616;
+            color: white;
+            padding: 0px 6px 8px 6px;
+        }
+        #foot{
+            position: relative;
+            font-size: 5rem;
+        top: 730px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            border: black 2px solid;
+            height: 100px;
+            color: #a9a9a9;
+            background-color: #2d2d2d;
+            font-family: 'Open Sans Condensed';
+        }
+        /* media queries */
+        @media only screen and (min-width:365px) and (max-width: 446px) {
+
+            #select {
+
+                display: inline;
+                position: relative;
+                top: -0px;
+            }
+
+            #listnav {
+                display: none;
+            }
+        }
+
+        @media only screen and (min-width:446px) and (max-width: 1250px) {
+
+            #listnav {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        @media only screen and (max-width: 365px) {
+
+            #select {
+
+                display: inline;
+                position: relative;
+                top: -0px;
+            }
+
+            #listnav {
+                display: none;
+            }
+
+            #bt {
+                font-size: 4rem;
+                padding: 3px 7px 3px 7px;
+            }
+
+            #bname {
+                font-size: 6rem;
+            }
+
+            #xyz p {
+                font-size: 5rem;
+            }
+        }
+
+        @media only screen and (max-width: 900px) {
+            #aboutsecs img {
+                width: 100vw;
+
+
+            }
+
+            h1 {
+                font-size: 5rem;
+            }
+
+            #aboutsecs p {
+                text-align: center;
+                margin: auto;
+                font-size: 3rem;
+            }
+
+        }
+
+        @media only screen and(min-width:230px) and (max-width: 370px) {
+            #stories {
+                font-size: 4rem;
+
+                height: 209px;
+                width: 209px;
+            }
+
+            #personal {
+                font-size: 4rem;
+
+                height: 209px;
+                width: 209px;
+
+            }
+
+            #professional {
+                font-size: 4rem;
+
+                height: 209px;
+                width: 209px;
+            }
+
+
+            #educational {
+                font-size: 4rem;
+
+                height: 209px;
+                width: 209px;
+
+
+            }
+
+            #travel {
+                font-size: 4rem;
+
+                height: 209px;
+                width: 209px;
+
+            }
+
+            #lifestyle {
+                font-size: 4rem;
+
+                height: 209px;
+                width: 209px;
+
+
+            }
+
+            h2 {
+                font-size: 5rem;
+                top: 357px;
+            }
+        }
+
+        @media only screen and (min-width:175px)and (max-width: 230px) {
+            #stories {
+                font-size: 3rem;
+
+                height: 209px;
+                width: 209px;
+            }
+
+            #personal {
+                font-size: 3rem;
+
+                height: 209px;
+                width: 209px;
+
+            }
+
+            #professional {
+                font-size: 3rem;
+
+                height: 209px;
+                width: 209px;
+            }
+
+
+            #educational {
+                font-size: 3rem;
+
+                height: 209px;
+                width: 209px;
+
+
+            }
+
+            #travel {
+                font-size: 3rem;
+
+                height: 209px;
+                width: 209px;
+
+            }
+
+            #lifestyle {
+                font-size: 3rem;
+
+                height: 209px;
+                width: 209px;
+
+
+            }
+
+            h2 {
+                font-size: 4rem;
+                top: 357px;
+            }
+        }
+
+        @media only screen and (max-width: 175px) {
+            #stories {
+                font-size: 2rem;
+
+                height: 170px;
+                width: 170px;
+            }
+
+            #personal {
+                font-size: 2rem;
+
+                height: 170px;
+                width: 170px;
+
+            }
+
+            #professional {
+                font-size: 2rem;
+
+                height: 170px;
+                width: 170px;
+            }
+
+
+            #educational {
+                font-size: 2rem;
+
+                height: 170px;
+                width: 170px;
+
+
+            }
+
+            #travel {
+                font-size: 2rem;
+
+                height: 170px;
+                width: 170px;
+
+            }
+
+            #lifestyle {
+                font-size: 2rem;
+
+                height: 170px;
+                width: 170px;
+
+
+            }
+
+            h2 {
+                font-size: 3rem;
+                top: 357px;
+            }
+        }
+    </style>
+    <section id="top">
+        <img src="office-381228_1280.webp" alt="pic" id="toppic">
+        <header>
+            <navbar id="nav">
+                <li id="listnav">
+                    <a href="#top">
+                        <ul id="home">HOME</ul>
+                    </a>
+                    <a href="#aboutsecs">
+                        <ul id="about">ABOUT</ul>
+                    </a>
+
+                    <a href="#loginsecs">
+                        <ul id="login">LOGIN</ul>
+                    </a>
+
+                    <a href="#typesecs">
+                        <ul id="type">TYPE</ul>
+                    </a>
+                    <a href="#readsecs">
+                        <ul id="read">READ</ul>
+                    </a>
+                </li>
+
+            </navbar>
+            
+        </header>
+    </section>
+    <div id="bname">
+        BlogxZone
+    </div>
+    <div id="but">
+        <a href="#loginsecs"> <button type="button" id="bt">Write</button></a>
+    </div>
+
+    <section id="aboutsecs">
+        <img src="people-waving-hand-illustration-concept_52683-29825.jpg" alt="random pic">
+        <b>
+            <h1>ABOUT US </h1>
+        </b>
+        <p>
+            Welcome to BlogxZone, THE number one platform for blogs. We're dedicated to providing you the very best of
+            service, with an emphasis on QUALITY, STANDARD and EASE .
+
+
+            BlogxZone has come a long way from its beginnings .
+
+            We hope you enjoy our best blogging platform as much as we enjoy offering them to you.
+            <br>
+            Sincerely,
+            <br>
+            --BlogxZone
+        </p>
+    </section>
+
+
+    <section id="loginsecs" class="abc">
+
+    </section>
+    <div id="xyz">
+        <p>Take a action now <br><a href="login.html">LOGIN</a>/<a href="signup.html">SIGNUP</a></p>
+    </div>
+    <h2> Genre of Blogs we offer</h2>
+    <section id="typesecs">
+
+        <div id="stories">
+            Exiciting Stories
+        </div>
+        <div id="personal">
+            Personal experiences
+        </div>
+        <div id="professional">
+            Professional
+
+        </div>
+
+
+    </section>
+    <section id="flex">
+        <div id="educational">
+            Educational Writeups
+        </div>
+        <div id="travel">
+            Travel Stories
+        </div>
+        <div id="lifestyle">
+            Lifestyle
+        </div>
+    </section>
+    <h3>
+        Read some of Our Chart buster Blogs
+    </h3>
+    <section id="readsecs">
+        <div id="meeting">
+            Meeting RDJ<br>
+
+        </div>
+        <div id="murder">
+            The Blood<br>
+
+        </div>
+        <div id="working">
+            Google<br>
+
+        </div>
+        <div id="Cyberhub">
+            CyberHub
+        </div>
+        <div id="Heir">
+            Heir
+        </div>
+    </section>
+
+    <section id="flexx">
+        <div id="trav">
+            Visiting Kashi<br>
+
+        </div>
+        <div id="life">
+            FashionsNow<br>
+
+        </div>
+        <div id="spacetime">
+            Spacetime
+        </div>
+
+    </section>
+    <footer id="foot">
+        All copyrights reserved --Designed by Priyank Sharma 
+    </footer>
+</body>
+
+</html>
